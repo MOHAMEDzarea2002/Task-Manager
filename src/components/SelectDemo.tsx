@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import type { TaskType, TaskStatus } from '@/context/Context';
+import type { TaskType, TaskStatus } from '@/types/TaskStatus';
 
 const items = [
   { label: 'Todo', state: 'todo' },

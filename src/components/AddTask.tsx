@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { TaskType } from '../context/Context';
+import type { TaskType } from '../types/TaskStatus';
 import { useTaskContext } from '../context/Context';
 import { DatePickerDemo } from './DatePicker';
  const initialTask: TaskType = {

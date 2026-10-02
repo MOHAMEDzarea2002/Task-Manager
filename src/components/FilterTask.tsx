@@ -1,4 +1,5 @@
-import { useTaskContext, type TaskStatus } from '@/context/Context';
+import { useTaskContext  } from '@/context/Context';
+import type  { TaskStatus } from '@/types/TaskStatus';
 
 export default function FilterTask() {
   const { tasks, filter, setFilter } = useTaskContext();

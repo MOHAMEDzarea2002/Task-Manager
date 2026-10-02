@@ -1,6 +1,7 @@
 import { CiCalendarDate } from 'react-icons/ci';
 import { RiDeleteBin6Line } from 'react-icons/ri';
-import { useTaskContext, type TaskType } from '../context/Context';
+import { useTaskContext,   } from '../context/Context';
+import type { TaskType } from '../types/TaskStatus';
 import { SelectDemo } from './SelectDemo';
 type CardTask = {
   task: TaskType;
