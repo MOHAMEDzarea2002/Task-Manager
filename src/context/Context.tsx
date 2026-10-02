@@ -1,16 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-
+import type { TaskType, TaskStatus } from '../types/TaskStatus';
 type ContextProvider = {
   children: React.ReactNode;
 };
-export type TaskStatus = 'todo' | 'in-progress' | 'done' | 'all';
-// TaskType
-export type TaskType = {
-  id: number;
-  task: string;
-  dueDate?: string;
-  status: TaskStatus;
-};
+
 
 type TaskContextType = {
   tasks: TaskType[];
@@ -80,7 +73,7 @@ export const TaskContextProvider = ({ children }: ContextProvider) => {
     </TaskContext.Provider>
   );
 };
-export const useTaskContext = () => {
+export  const useTaskContext = () => {
   const ctx = useContext(TaskContext);
 
   if (!ctx) {

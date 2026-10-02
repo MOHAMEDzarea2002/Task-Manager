@@ -5,7 +5,7 @@ export default function Header() {
     <div className="flex  justify-center  shadow-md p-2 rounded-sm">
       <div className="flex justify-between items-center w-175">
         {/* Logo */}
-        <div className="text-3xl text-blue-600 font-bold">Z</div>
+        <img src="/src/assets/logo (2).svg" alt="Logo" className="w-32 h-12 text-blue-600 font-bold"/>
         {/* icon User */}
         <div className="bg-blue-500 p-4 rounded-full text-white cursor-pointer flex justify-center items-center">
           <FaRegUser />
